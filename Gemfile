@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 #frozen-retreat-2220
 
 gem 'rails', '3.2.14'
@@ -44,3 +44,10 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+group :development do
+	gem 'sqlite3'
+end
+group :production do
+	gem 'pg'
+	gem 'rails_12factor'
+end
